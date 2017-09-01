@@ -1,0 +1,25 @@
+#--Directory operative radar giorno
+BASE=/home/meteo/radar_giorno
+export TMP_DIR=$BASE/tmp
+SCARICO_DIR=$BASE/geotiff
+RADARDIR_CUM=$BASE/cumulata
+GRADS=$BASE/grads
+GRADS_EXE=/opt/grads/grads-2.0.2/bin/grads
+SERVER_DATI="meteo@10.10.0.13"
+SERVER="meteo@10.10.49.201"
+SERVER1="meteo@10.10.0.14"
+SERVER_EXT="meteoweb@172.16.1.10"
+RADAR_SERVER_GIORNO=/srv/www/prodottimeteo/radar/radar_giorno
+RADAR_SERVER_GIORNO1=/var/www/html/prodottimeteo/radar/radar_giorno
+RADAR_SERVER_GIORNO_EXT=/var/www/meteo/ghost/radar/radar_giorno
+#ambiente grads
+export GADDIR=/opt/grads/grads-2.0.2/lib
+export GASHP=/home/meteo/grads_shapefile
+
+#--Variabili radar
+#host=172.16.1.4
+host=ftp.arpalombardia.it
+usr=radar
+pwr=radch!
+#node="-u radar -p radch! 172.16.1.4"
+node="-u radar -p radch! ftp.arpalombardia.it"
